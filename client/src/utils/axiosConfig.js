@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getAuthToken, setAuthToken } from './auth';
 
 // Configure axios defaults
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://loan-management-system-850g.onrender.com';
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 axios.defaults.headers.common['Accept'] = 'application/json';
 // Setting withCredentials to true can sometimes cause CORS issues with Authorization headers
