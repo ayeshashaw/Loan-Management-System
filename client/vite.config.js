@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://loan-management-system-850g.onrender.com',
         changeOrigin: true
       }
     }
