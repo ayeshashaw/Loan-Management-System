@@ -1,0 +1,112 @@
+.user-dashboard {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-dashboard h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.dashboard-card {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.dashboard-card h2 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-group p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.info-group strong {
+  color: var(--text-primary);
+  margin-right: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.action-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.action-btn.secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.action-btn.secondary:hover {
+  background-color: var(--bg-primary);
+}
+
+.action-btn.logout {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+}
+
+.action-btn.logout:hover {
+  background-color: var(--error-hover);
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .user-dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,421 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background-color: #4285f4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 25px;
+}
+
+.main-nav a {
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.main-nav li.active a {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.apply-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #3367d6;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title-dark {
+  color: #222;
+}
+
+.hero-title-blue {
+  color: #4285f4;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.apply-button.with-arrow::after {
+  content: '→';
+  margin-left: 10px;
+}
+
+.dashboard-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Loan Options Section */
+.loan-options-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.loan-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.loan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+}
+
+.loan-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loan-icon i {
+  font-size: 24px;
+  color: #4285f4;
+}
+
+/* Icons */
+.credit-card::before {
+  content: "💳";
+}
+
+.home::before {
+  content: "🏠";
+}
+
+.education::before {
+  content: "🎓";
+}
+
+.auto::before {
+  content: "🚗";
+}
+
+.loan-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.loan-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: inline-block;
+  color: #4285f4;
+  font-weight: 500;
+}
+
+.learn-more::after {
+  content: "→";
+  margin-left: 5px;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background-color: #f0f7ff;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.cta-button::after {
+  content: "→";
+  margin-left: 10px;
+}
+
+.cta-button:hover {
+  background-color: #3367d6;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-company {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.footer-company p {
+  color: #666;
+  margin-top: 15px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-column h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #4285f4;
+}
+
+.footer-copyright {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .logo-container {
+    margin-bottom: 15px;
+  }
+  
+  .main-nav {
+    margin: 15px 0;
+  }
+  
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main-nav li {
+    margin: 0 10px 10px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-card, .loan-card {
+    padding: 20px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-company {
+    margin-bottom: 30px;
+  }
+  
+  .footer-links {
+    gap: 30px;
+  }
+}

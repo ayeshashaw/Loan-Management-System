@@ -1,0 +1,133 @@
+.loan-status-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loan-status-container.dark {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.loan-status-container.light {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.loan-status-container h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.loan-applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loan-application-card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.application-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-approved {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+}
+
+.status-pending {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.status-rejected {
+  background-color: var(--info-bg);
+  color: var(--info-text);
+}
+
+.application-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.value {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.comments-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.comments-section h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.comments-section p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.loading,
+.error,
+.no-applications {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.error {
+  color: #dc3545;
+}
